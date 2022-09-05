@@ -202,7 +202,7 @@ def birthday_list():
             print_name_list += f"{employee_list[i]}  {e_dep_name}  {employee_bdays[i]}\n\n"
 
     for i in range(len(manager_bdays)):
-        if d in manager_bdays[i]:
+        if d in manager_bdays[i][3:5]:
             m_dep_name = database_functions.get_department_name(manager_ids[i], "Manager")
             print_name_list += f"{manager_list[i]}  {m_dep_name}  {manager_bdays[i]}\n\n"
 
